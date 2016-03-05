@@ -7,11 +7,13 @@
  * and spells them out character by character.
  *
  * equivalent to https://study.cs50.net/argv#echo
+ * and https://study.cs50.net/argv#num_characters
  */
 
 int main(int argc, string argv[])
 {
     int i = 0; // in for-loop: initialisation
+    int n = 0; // number of characters in CLAs
 
     while (i < argc) // in for-loop: condition, that's checked
     {
@@ -24,6 +26,9 @@ int main(int argc, string argv[])
         }
 
         printf(".\n");
+        n = n + strlen(argv[i]); // does not yet ignore program name
         i++; // in for-loop: update
     }
+
+    printf("In sum, the command line arguments contain %i characters.\n", n);
 }
