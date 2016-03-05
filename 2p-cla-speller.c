@@ -8,7 +8,7 @@
 
 int main(int argc, char* argv[])
 {
-    int i = argc - 1; // in for-loop: initialisation
+    int i = 0; // in for-loop: initialisation
 
     while (i < argc) // in for-loop: condition, that's checked
     {
