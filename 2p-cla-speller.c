@@ -8,7 +8,7 @@
 
 int main(int argc, char* argv[])
 {
-    int i = 0; // in for-loop: initialisation
+    int i = argc; // in for-loop: initialisation
 
     do // executes at least once, because condition is checked at the end
     {
