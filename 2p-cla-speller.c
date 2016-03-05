@@ -10,7 +10,7 @@ int main(int argc, char* argv[])
 {
     int i = argc - 1; // in for-loop: initialisation
 
-    do // executes at least once, because condition is checked at the end
+    while (i < argc) // in for-loop: condition, that's checked
     {
         printf("CLA no. %i is \'%s\' and is spelled:", i + 1, argv[i]);
 
@@ -23,5 +23,4 @@ int main(int argc, char* argv[])
         printf(".\n");
         i++; // in for-loop: update
     }
-    while (i < argc); // in for-loop: condition, that's checked
 }
