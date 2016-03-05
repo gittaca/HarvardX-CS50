@@ -1,12 +1,15 @@
+#include <cs50.h> // `string` instead of `char*` for argv[]
 #include <stdio.h>
 #include <string.h>
 
 /* Accepts any number of command line arguments,
  * prints them in a numbered line,
  * and spells them out character by character.
+ *
+ * equivalent to https://study.cs50.net/argv#echo
  */
 
-int main(int argc, char* argv[])
+int main(int argc, string argv[])
 {
     int i = 0; // in for-loop: initialisation
 
