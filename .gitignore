@@ -1,0 +1,9 @@
+
+# https://manual.cs50.net/seminars/
+*.mp4
+*.pdf
+
+# others
+*.md
+*.txt
+*.tar.gz
