@@ -26,8 +26,13 @@ int main(int argc, string argv[])
         }
 
         printf(".\n");
-        n = n + strlen(argv[i]); // does not yet ignore program name
         i++; // in for-loop: update
+    }
+
+    // ignore program name in CLA character count
+    for (i = 1; i < argc; i++)
+    {
+      n = n + strlen(argv[i]);
     }
 
     printf("In sum, the command line arguments contain %i characters.\n", n);
