@@ -25,7 +25,7 @@ int main(int argc, string argv[])
             printf(" %c", argv[i][j]);
         }
 
-        printf(",\n and contains: %i characters.\n", strlen(argv[i]));
+        printf(",\n and contains: %lu characters.\n", strlen(argv[i]));
         i++; // in for-loop: update
     }
 
