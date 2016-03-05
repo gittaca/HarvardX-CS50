@@ -15,7 +15,7 @@ int main(int argc, string argv[])
 
     while (i < argc) // in for-loop: condition, that's checked
     {
-        printf("CLA no. %i (index: %i) is \'%s\' and is spelled:", i + 1, i, argv[i]);
+        printf("CLA at index %i is \'%s\',\n which is spelled:", i, argv[i]);
 
         for (int j = 0; j < strlen(argv[i]); j++)
         //   init.      condition            update
