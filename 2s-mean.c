@@ -23,12 +23,12 @@ int main(void)
         sum += numbers[i];
     }
 
-    printf("OK, thanks! The numbers are:\n");
+    printf("OK, thanks! The numbers are %i", numbers[0]);
 
-    for (int i = 0; i < n; i++)
+    for (int i = 1; i < n - 2; i++)
     {
-        printf("%i\n", numbers[i]);
+        printf(", %i", numbers[i]);
     }
 
-    printf("And the mean is: %2f.\n", (float) sum / n);
+    printf(" and %i; and their mean is %.2f.\n", numbers[n - 1], (float) sum / n);
 }
