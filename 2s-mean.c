@@ -4,9 +4,9 @@
 int main(void)
 {
     int n = 5;
-    int numbers[5];
+    int numbers[n];
 
-    printf("Please type in %i positive integers!\n, n");
+    printf("Please type in %i positive integers!\n", n);
 
     for (int i = 0; i < n; i++)
     {
@@ -19,7 +19,6 @@ int main(void)
         while (m < 1);
 
         numbers[i] = m;
-        i++;
     }
 
     printf("OK, thanks! The numbers are:\n");
