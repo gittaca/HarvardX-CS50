@@ -13,7 +13,7 @@ int main(void)
 
     for (int i = 0; i < length ; i++)
     {
-        if (full_name[i] == " ")
+        if (full_name[i] == ' ')
         {
             PrintInitialCap(full_name[i + 1]);
         }
