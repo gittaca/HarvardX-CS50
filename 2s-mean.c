@@ -3,11 +3,12 @@
 
 int main(void)
 {
-    int n = 5;
+    printf("How many numbers do you want to calculate the mean of? ");
+    int n = GetInt();
     int numbers[n];
     int sum = 0;
 
-    printf("Please type in %i positive integers!\n", n);
+    printf("OK, please type in %i positive integers!\n", n);
 
     for (int i = 0; i < n; i++)
     {
