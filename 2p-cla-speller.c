@@ -19,20 +19,24 @@ int main(int argc, string argv[])
     {
         printf("CLA at index %i is \'%s\',\n which is spelled:", i, argv[i]);
 
-        for (int j = 0; j < strlen(argv[i]); j++)
+        n_chars_in_arg = strlen(argv[i])
+
+        for (int j = 0; j < n_chars_in_arg; j++)
         //   init.      condition            update
         {
             printf(" %c", argv[i][j]);
         }
 
-        printf(",\n and contains: %i characters.\n", (int) strlen(argv[i]));
+        printf(",\n and contains: %i characters.\n", (int) n_chars_in_arg);
         i++; // in for-loop: update
     }
 
     // ignore program name in CLA character count
-    for (i = 1; i < argc; i++)
+    n = strlen(argv[1])
+
+    for (i = 2; i < argc; i++)
     {
-      n = n + strlen(argv[i]);
+      n++;
     }
 
     printf("In sum, the command line arguments contain %i characters.\n", n);
