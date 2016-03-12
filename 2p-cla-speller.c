@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-/* Accepts any number of command line arguments,
+/* Accepts any numer of command line arguments,
  * prints them in a numbered line,
  * and spells them out character by character.
  *
@@ -19,24 +19,14 @@ int main(int argc, string argv[])
     {
         printf("CLA at index %i is \'%s\',\n which is spelled:", i, argv[i]);
 
-        n_chars_in_arg = strlen(argv[i])
-
-        for (int j = 0; j < n_chars_in_arg; j++)
-        //   init.      condition            update
-        {
+        int nj = strlen(argv[i]);
+        for (int j = 0; j < nj; j++)
+        //   init.      cond.   update
             printf(" %c", argv[i][j]);
-        }
 
-        printf(",\n and contains: %i characters.\n", (int) n_chars_in_arg);
+        printf(",\n and contains: %i characters.\n", nj);
         i++; // in for-loop: update
-    }
-
-    // ignore program name in CLA character count
-    n = strlen(argv[1])
-
-    for (i = 2; i < argc; i++)
-    {
-      n++;
+        n += nj;
     }
 
     printf("In sum, the command line arguments contain %i characters.\n", n);
