@@ -29,5 +29,7 @@ int main(int argc, string argv[])
         n += nj;
     }
 
+    int m = strlen(argv[0]);
     printf("In sum, the command line arguments contain %i characters.\n", n);
+    printf("Well, minus %i for the program name itself, so only %i in the actual CLAs.\n", m, n - m);
 }
