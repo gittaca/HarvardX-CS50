@@ -8,13 +8,13 @@ int main(void) {
 
 void PrintGrid(int width, int height) {
     int i = 0;
-    do {
+    while (i < height) {
         int j = 0;
-        do {
+        while (j < width) {
             printf("#");
             j++;
-        } while (j < width);
+        }
         printf("\n");
         i++;
-    } while (i < height);
+    }
 }
