@@ -7,14 +7,10 @@ int main(void) {
 }
 
 void PrintGrid(int width, int height) {
-    int i = 0;
-    while (i < height) {
-        int j = 0;
-        while (j < width) {
+    for (int i = 0; i < height; i++) {
+        for (int j = 0; j < width; j++) {
             printf("#");
-            j++;
         }
         printf("\n");
-        i++;
     }
 }
