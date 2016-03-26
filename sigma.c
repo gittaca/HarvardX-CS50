@@ -1,12 +1,12 @@
 /**
- * sigma-0.c
+ * sigma-1.c
  *
  * David J. Malan
  * malan@harvard.edu
  *
  * Adds the numbers 1 through n.
  *
- * Demonstrates iteration.
+ * Demonstrates recursion.
  */
 
 #include <cs50.h>
@@ -39,10 +39,12 @@ int main(void)
 int sigma(int m)
 {
     // return sum of 1 through m
-    int sum = 0;
-    for (int i = 1; i <= m; i++)
+    if (m <= 0) // base case
     {
-        sum += i;
+        return 0;
     }
-    return sum;
+    else // recursive case
+    {
+        return (m + sigma(m - 1));
+    }
 }
