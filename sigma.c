@@ -15,16 +15,16 @@
 // prototype
 int sigma(int);
 
-int main(void)
+int main(int argc, char* argv[])
 {
-    // ask user for a positive int
-    int n;
-    do
+    // ensure proper usage & ask user for a positive int
+    if (argc != 2 || argv[1] < 1)
     {
-        printf("Positive integer please: ");
-        n = GetInt();
+        printf("Usage: sigma n (Where n is an integer > 0.)\n");
+        return 1;
     }
-    while (n < 1);
+
+    int n = atoi(argv[1]);
 
     // compute sum of 1 through n
     int answer = sigma(n);
