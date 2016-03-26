@@ -40,5 +40,9 @@ int sigma(int m)
 {
     // return sum of 1 through m
     int sum = 0;
+    for (int i = 1; i <= m; i++)
+    {
+        sum += i;
+    }
     return sum;
 }
